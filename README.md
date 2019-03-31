@@ -1,5 +1,7 @@
 # Implementing AdminLTE to Laravel From scratch
 
+Compile all javascripts assets into apps.js and all css assets to apps.css
+
 1. Add the packages to your package.json
 
 ```
