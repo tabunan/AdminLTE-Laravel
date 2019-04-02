@@ -1,7 +1,7 @@
-@include('layouts.header')
-@include('layouts.nav')
+@include('layouts.parts.header')
+@include('layouts.parts.nav')
 @if (!Auth::guest())
-  @include('layouts.sidebar')
+  @include('layouts.parts.sidebar')
 @endif
   <!-- Content Wrapper. Contains page content -->
   <div class="content-wrapper">
@@ -30,7 +30,7 @@
   </div>
   <!-- /.content-wrapper -->
 @if (!Auth::guest())
-@include('layouts.sidebar-control')
+@include('layouts.parts.sidebar-control')
 @endif
-@include('layouts.content-footer')
-@include('layouts.footer')
+@include('layouts.parts.content-footer')
+@include('layouts.parts.footer')
